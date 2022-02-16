@@ -15,4 +15,8 @@ class Movie extends Model
         'year_recorded',
         'storyline'
     ];
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }
