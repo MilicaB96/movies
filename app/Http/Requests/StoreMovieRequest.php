@@ -27,8 +27,8 @@ class StoreMovieRequest extends FormRequest
             'title' => 'required',
             'genre' => 'required',
             'director' => 'string',
-            'year_recorded' => 'required|numeric|between:1990,2022',
-            'storyline' => 'required|max:1000'
+            'year_recorded' => 'numeric|between:1990,2022',
+            'storyline' => 'max:1000'
         ];
     }
 }
