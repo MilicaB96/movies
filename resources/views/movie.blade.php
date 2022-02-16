@@ -14,7 +14,20 @@
                 </div>
                 <br>
             @endforeach
+            <form method="POST" action="/comment/add">
+                @csrf
+                <input type="hidden" name="movie_id" value="{{ $movie->id }}">
+                <textarea name="content" cols="80" rows="5"></textarea>
+                <br>
+                @error('content')
+                    <div>
+                        {{ $message }}
+                    </div>
+                @enderror
+                <button type="submit">Post!</button>
+            </form>
         </div>
+        <br>
         <h3>{{ $movie->genre }}</h3>
         <h3>{{ $movie->year_recorded }}</h3>
     </div>
