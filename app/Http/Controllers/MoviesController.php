@@ -17,4 +17,8 @@ class MoviesController extends Controller
         $movie = Movie::findorFail($id);
         return view('movie', compact('movie'));
     }
+    public function create()
+    {
+        return view('create_movie');
+    }
 }

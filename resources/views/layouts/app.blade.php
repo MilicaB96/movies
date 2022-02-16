@@ -15,7 +15,7 @@
     <nav class="navbar  navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid d-inline-block">
             <a class="navbar-brand" href="/movies">Movies</a>
-            <a class="navbar-brand" href="/add">Add Movies</a>
+            <a class="navbar-brand" href="/create">Add Movies</a>
         </div>
     </nav>
     <div>
