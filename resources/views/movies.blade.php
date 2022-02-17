@@ -6,7 +6,7 @@
             <ul class="nav nav-pills flex-column mb-auto">
                 @foreach ($shareddata as $data)
                     <li class="nav-item">
-                        <a href="/moviee/{{ $data->id }}" class="nav-link link-dark" aria-current="page">
+                        <a href="/movies/{{ $data->id }}" class="nav-link link-dark" aria-current="page">
                             {{ $data->title }}
                         </a>
                 @endforeach
