@@ -20,15 +20,17 @@
                 <textarea name="content" cols="80" rows="5"></textarea>
                 <br>
                 @error('content')
-                    <div>
+                    <div class="alert alert-danger">
                         {{ $message }}
                     </div>
                 @enderror
+
                 <button type="submit">Post!</button>
             </form>
         </div>
         <br>
-        <h3>{{ $movie->genre }}</h3>
+        <h3><a style="text-decoration: none; color:black" href="/genres/{{ $movie->genre }}">{{ $movie->genre }} </a>
+        </h3>
         <h3>{{ $movie->year_recorded }}</h3>
     </div>
 
